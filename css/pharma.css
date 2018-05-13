@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=BioRhyme:200,300,400,700,800|Merriweather:300,300i,400,400i,700,900,900i|Montserrat:100,300,300i,400,400i,600,600i,800,800i,900,900i|Raleway:100,200,200i,400,400i,500,700,700i,800,900,900i|Roboto+Slab:100,300,400,700|Slabo+27px&subset=cyrillic');
+
+.mainJ{
+	background: url(../img/main-land.jpg);
+	background-size: cover;
+	background-position: 0 25%;
+	background-repeat: no-repeat;
+	color: #fff;
+	min-height: 680px;
+	text-shadow: 1px 1px 0 black;
+	font-family: "Cuprum",sans-serif;
+	font-size: 2em; 
+}
+.parallax-bg{
+	background-image: url(../img/jumbo-parallax.png);
+	background-color: #00C5F0;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position:;
+	background-repeat: no-repeat;
+	color: #fff;
+	min-height: 340px;
+}
+.social{
+	float: left;
+	margin: 5px auto;
+}
+.social-t,
+.social-f,
+.social-b,
+.social-c,		
+.social-i,
+.social-g {
+	transition: all 0.3s ease;
+	border-radius: 100%;
+	display: inline-block;
+	background: rgba(17,17,17,0.7);
+	background-image: url("../img/sprite.png");
+	background-size: 600%;
+	width: 35px;
+	height: 35px;
+	box-shadow: inset 0 2px 1px black;
+}
+.social-f{
+	background-position: -35px 0;
+}
+.social-b{
+	background-position: -70px 0; 
+}
+.social-c{
+	background-position: -105px 0;
+}
+.social-i{
+	background-position: -140px 0;
+}
+.social-g{
+	background-position: -175px 0;
+}
+.social-t:hover,
+.social-f:hover,
+.social-b:hover,
+.social-c:hover,
+.social-i:hover,
+.social-g:hover {
+	cursor: pointer;
+	background-position-y: -35px;
+}
