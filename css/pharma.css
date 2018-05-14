@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=BioRhyme:200,300,400,700,800|Merriweather:300,300i,400,400i,700,900,900i|Montserrat:100,300,300i,400,400i,600,600i,800,800i,900,900i|Raleway:100,200,200i,400,400i,500,700,700i,800,900,900i|Roboto+Slab:100,300,400,700|Slabo+27px&subset=cyrillic');
 
+a:link,
+a:visited {
+	color:#00B3E6;
+}
+a:hover {
+	color: #00f3E6;
+}
+
 .mainJ{
-	background: url(../img/main-land.jpg);
+	background: url(../img/main-land2.jpg);
 	background-size: cover;
 	background-position: 0 25%;
 	background-repeat: no-repeat;
 	color: #fff;
-	min-height: 680px;
+	min-height: 720px;
 	text-shadow: 1px 1px 0 black;
-	font-family: "Cuprum",sans-serif;
+	font-family: Gill Sans MT;
 	font-size: 2em; 
 }
 .parallax-bg{
@@ -21,6 +29,21 @@
 	background-repeat: no-repeat;
 	color: #fff;
 	min-height: 340px;
+}
+.youtube-block{
+	background: url(../img/player-bg.png) no-repeat;
+	background-size: 100%;
+}
+.vList{
+	list-style:none;
+	margin-left: -5%;
+	margin-right: 5%;
+	transition: all 1s ease;
+}
+.vList>li:hover{
+	box-shadow: 5px 5px 5px #60a0c5;
+	transition: all 1s ease;
+	transform: scale(1.1);
 }
 .social{
 	float: left;
