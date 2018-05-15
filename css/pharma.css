@@ -17,7 +17,7 @@ a:hover {
 	color: #fff;
 	min-height: 720px;
 	text-shadow: 1px 1px 0 black;
-	font-family: Gill Sans MT;
+	font-family: sans-serif;
 	font-size: 2em; 
 }
 .parallax-bg{
@@ -34,17 +34,47 @@ a:hover {
 	background: url(../img/player-bg.png) no-repeat;
 	background-size: 100%;
 }
-.vList{
+
+.vList{ 
+	background: rgba(217,237,247,0.3);
+	color:#111;
+	box-shadow: 0 0  2px #333;
+}
+
+.vList img{ width:160px; height: 100px;  }
+.vList li{margin-top: 3%;}
+
+.vList li,
+.vList img{
 	list-style:none;
 	margin-left: -5%;
 	margin-right: 5%;
-	transition: all 1s ease;
+	transition: all 0.3s ease;
 }
-.vList>li:hover{
-	box-shadow: 5px 5px 5px #60a0c5;
-	transition: all 1s ease;
+.vList h4{
+	transition: all 0.3s ease;
+}
+.vList li:hover img,
+.vList li:hover h4{
+	box-shadow: 0 10px 10px -5px #60a0c5;
 	transform: scale(1.1);
 }
+
+.btn-me{
+	background: transparent;
+	border: 1px solid #00B2F4;
+	margin-bottom: 1%;
+	color: #00B2F4;
+	padding: 1%;
+	border-radius: 25px;
+}
+.btn-me:hover{
+	color: #01EDC9;
+	border: 1px solid #01EDC9;
+	box-shadow: 0 0 5px #01EDC9, inset 0 0 5px #01EDC9;
+}
+
+
 .social{
 	float: left;
 	margin: 5px auto;

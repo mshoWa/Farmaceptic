@@ -17,8 +17,50 @@
     <![endif]-->
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">	    
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style>
+		
+		li,
+		li h4,
+		li img{
+			list-style:none;
+			transition: all 0.3s ease;
+		}
+		img{ width: 160px; height: 100px; }
+		/*==============================*/
+		.vList>li:hover{
+			box-shadow: 0 10px 10px -5px #60a0c5;
+			transform: scale(1.1);
+		}
+		/*==============================*/
+		.vList1>li{
+			margin-left: -5%;
+			margin-right: 5%;
+			margin-bottom: 7%;
+			transition: all 0.3s ease;
+		}
+		.vList1>li:hover img{
+			box-shadow: 0 10px 10px -5px #60a0c5;
+			transform: scale(1.1);
+		}
+		.vList1>li:hover{
+			box-shadow: 0 10px 10px -10px #60a0c5;
+			transform: scale(1.1);
+		}
+		/*==============================*/
+		.vList2>li{
+			margin-left: -5%;
+			margin-right: 5%;
+			margin-bottom: 15%;
+			transition: all 0.3s ease;
+		}
+		.vList2>li:hover{
+			border-bottom: 2px inset black;
+			transform: scale(1.1);
+			box-shadow: 0 10px 10px -10px #60a0c5;
+		}
+		/*==============================*/
+    </style>
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
@@ -179,7 +221,78 @@
 			</div>
 		</div>
 	</div>
-	
+	<!-- ============================================================================================ -->
+	<div class="container">
+		<div class="col-md-4 text-center bg-info" style="color: #3a3a3a;">
+		    <ul class="thumbnails vList">
+				<li>
+					<div class="thumbnail">
+						<img alt="160x100" src="img/player-bg.png">
+						<h4>Some Video - somesomesome text</h4>
+					</div>
+				</li>
+				<li>
+					<div class="thumbnail">
+						<img alt="160x100" src="img/player-bg.png">
+						<h4>Some Video - some text</h4>
+					</div>
+				</li>
+				<li>
+					<div class="thumbnail">
+						<img alt="160x100" src="img/player-bg.png">
+						<h4>Some Video - some text</h4>
+					</div>
+				</li>
+		    </ul>
+		</div>
+		<!-- ================================================================================================= -->
+		<div class="col-md-4 text-center bg-info" style="color: #3a3a3a;">
+		    <ul class="vList1">
+				<li>
+					<div class="">
+						<img alt="160x100" src="img/player-bg.png">
+						<h4>Some Video - somesomesome text</h4>
+					</div>
+				</li>
+				<li>
+					<div class="">
+						<img alt="160x100" src="img/player-bg.png">
+						<h4>Some Video - some text <span class="shadow"></span></h4>
+					</div>
+				</li>
+				<li>
+					<div class="">
+						<img alt="160x100" src="img/player-bg.png">
+						<h4>Some Video - some text</h4>
+					</div>
+				</li>
+		    </ul>
+		</div>
+		<!-- ================================================================================================= -->
+		<div class="col-md-4 text-center bg-info" style="color: #3a3a3a;">
+		    <ul class="vList2">
+				<li>
+					<div class="">
+						<img alt="160x100" src="img/player-bg.png">
+						<h4>Some Video - somesomesome text</h4>
+					</div>
+				</li>
+				<li>
+					<div class="">
+						<img alt="160x100" src="img/player-bg.png">
+						<h4>Some Video - some text</h4>
+					</div>
+				</li>
+				<li>
+					<div class="">
+						<img alt="160x100" src="img/player-bg.png">
+						<h4>Some Video - some text</h4>
+					</div>
+				</li>
+		    </ul>
+		</div>
+	</div>
+	<!-- ============================================================================================= -->
 	<hr>
 	<div class="footer bg-primary">
 		<div class="container text-center">
