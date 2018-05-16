@@ -11,6 +11,7 @@ a:hover {
 
 .mainJ{
 	background: url(../img/main-land2.jpg);
+	width: 100%;
 	background-size: cover;
 	background-position: 0 25%;
 	background-repeat: no-repeat;
@@ -22,7 +23,7 @@ a:hover {
 }
 .parallax-bg{
 	background-image: url(../img/jumbo-parallax.png);
-	background-color: #00C5F0;
+	background-color: #00C5F0; /*#09569B*/
 	background-attachment: fixed;
 	background-size: cover;
 	background-position:;
@@ -30,19 +31,62 @@ a:hover {
 	color: #fff;
 	min-height: 340px;
 }
+.container{
+	margin: 3% auto;
+}
+/**********************************Pill-Cards************************************/
+.pCards{
+	background: url(../img/anal.png) no-repeat;
+	background-size: auto 100%;
+	background-position: center 20%;
+	margin: 1% 2%;
+	width: 100%;
+	min-height: 200px;
+	border-radius: 5px;
+	position: relative;
+	
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.pCards:hover{
+	background-size: auto 110%;
+}
+
+.pCards:hover .pCardT{
+	background: rgba(9,86,155,0.85);
+	top: 0;
+	padding-top: 10%;
+	border-radius: 5px;
+}
+
+.pCardT{
+	background: rgba(9,86,155,0.8);
+	position: absolute;
+	bottom:0;
+	color: white;
+	font-weight: 10px;
+	border-radius: 0 0 5px 5px;
+	
+	-webkit-transition: background 0.5s ease, top 0.5s ease, padding-top 0.5s ease;
+	-o-transition: background 0.5s ease, top 0.5s ease, padding-top 0.5s ease;
+	transition: background 0.5s ease, top 0.5s ease, padding-top 0.5s ease;
+}
+.pCardT>p{
+	margin: 5%;
+}
+/**********************************Youtube block************************************/
 .youtube-block{
 	background: url(../img/player-bg.png) no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 
 .vList{ 
 	background: rgba(217,237,247,0.3);
 	color:#111;
-	box-shadow: 0 0  2px #333;
 }
-
 .vList img{ width:160px; height: 100px;  }
-.vList li{margin-top: 3%;}
+.vList li{ margin-top: 3%; }
 
 .vList li,
 .vList img{
@@ -65,8 +109,11 @@ a:hover {
 	border: 1px solid #00B2F4;
 	margin-bottom: 1%;
 	color: #00B2F4;
-	padding: 1%;
+	padding: 1% 2%;
 	border-radius: 25px;
+	font-size: 1.2em;
+	position: relative;
+	left: 42%;
 }
 .btn-me:hover{
 	color: #01EDC9;
