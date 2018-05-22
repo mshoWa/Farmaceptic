@@ -1,6 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=BioRhyme:200,300,400,700,800|Merriweather:300,300i,400,400i,700,900,900i|Montserrat:100,300,300i,400,400i,600,600i,800,800i,900,900i|Raleway:100,200,200i,400,400i,500,700,700i,800,900,900i|Roboto+Slab:100,300,400,700|Slabo+27px&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Cuprum|Istok+Web|PT+Sans+Caption|Roboto');
 
+/**********************************ScrollBar (notFirefox)*******************/
+*::-webkit-scrollbar-track
+{
+	background-color: #f0f0f0;
+	border-radius: 10px;
+}
+
+
+*::-webkit-scrollbar
+{
+	width: 0.5%;
+	height: 0.02%;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #999;
+	border-radius: 10px;
+}
+/**************************************Body Std Css************************************************/
+*{ font-family: "Istok Web", sans-serif; scroll-behavior: smooth;}
+
+section h1,
+section h2{
+	margin-bottom: 30px;
+	font-size: 3em;
+}
+/*****************************Link*******************/
 a:link,
 a:visited {
 	color:#00B3E6;
@@ -8,19 +37,23 @@ a:visited {
 a:hover {
 	color: #00f3E6;
 }
+/***************************************************/
+.container{
+	margin: 32px auto;
+}
 
 .mainJ{
-	background: url(../img/main-land2.jpg);
+	background: url(../img/main-land3.png);
 	width: 100%;
 	background-size: cover;
-	background-position: 0 25%;
+	background-position: 0 100%;
 	background-repeat: no-repeat;
 	color: #fff;
-	min-height: 720px;
-	text-shadow: 1px 1px 0 black;
-	font-family: sans-serif;
-	font-size: 2em; 
-	margin-top: -3%;
+	font-family: "Istok Web", sans-serif;
+	font-size: 2em;
+	position: relative;
+	margin-top: -5%;
+	min-height: 720px; 
 }
 .parallax-bg{
 	background-image: url(../img/jumbo-parallax.png);
@@ -32,8 +65,15 @@ a:hover {
 	color: #fff;
 	min-height: 340px;
 }
-.container{
-	margin: 3% auto;
+
+.icon-b{
+	margin: 32px auto;
+}
+.icon-b + *{
+	font-size: 2em;
+}
+.icon-b + * + p{
+	font-size: 1.2em;
 }
 /**********************************Pill-Cards************************************/
 .pBg-1{
@@ -55,7 +95,7 @@ a:hover {
 	background: url(../img/pils4.png) no-repeat;
 }
 .pCards{
-	background-size: 100% auto;
+	background-size: 110% auto;
 	background-position: center;
 	margin: 1% 2%;
 	width: 100%;
@@ -67,7 +107,7 @@ a:hover {
 	transition: all 0.5s ease;
 }
 div.pCards:hover{
-	background-size: 110% auto;
+	background-size: 120% auto;
 }
 
 .pCards:hover .pCardT{
@@ -75,21 +115,21 @@ div.pCards:hover{
 	height: 100%;
 	padding-top: 10%;
 	border-radius: 5px;
-	bottom: 0;
 }
 
 .pCardT{
 	background: rgba(9,86,155,0.8);
+	border-radius: 0 0 5px 5px;
 	position: absolute;
-	bottom:30%;
-	height:40%;
-	color: white;
 	font-weight: 10px;
-	border-radius: 0;
-	
-	-webkit-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	color: white;
+	width: 100%;
+	height:40%;
+	bottom:0;
+
+	-webkit-transition: background 0.5s ease, top 0.5s ease, padding-top 0.5s ease, height 0.5s ease;
+	-o-transition: background 0.5s ease, top 0.5s ease, padding-top 0.5s ease, height 0.5s ease;
+	transition: background 0.5s ease, top 0.5s ease, padding-top 0.5s ease, height 0.5s ease;
 }
 .pCardT>p{
 	margin: 5%;
@@ -122,25 +162,52 @@ div.pCards:hover{
 	box-shadow: 0 10px 10px -5px #60a0c5;
 	transform: scale(1.1);
 }
-
-.btn-me{
+/***************************************Buttons****************************************/
+ .bBlock{
+	margin-top: 10%;
+} 
+.btns{
+	outline: none;
 	background: transparent;
 	border: 1px solid #00B2F4;
-	margin-bottom: 1%;
 	color: #00B2F4;
-	padding: 1% 2%;
-	border-radius: 25px;
+	border-radius: 100px;
 	font-size: 1.2em;
-	position: relative;
-	left: 42%;
+	padding: 1% 3%;
 }
-.btn-me:hover{
-	color: #01EDC9;
-	border: 1px solid #01EDC9;
+
+.btns:hover,
+#tm:hover,
+#tm2:hover{
 	box-shadow: 0 0 5px #01EDC9, inset 0 0 5px #01EDC9;
+	border: 1px solid #00B2F4;
+	border-color: #01EDC9;
+	background: none;
+	color: #fff;
 }
 
+button.btns{
+	background: url(../img/templef0.png) no-repeat center;
+	background-size: auto 100%;
+	color: transparent;
+	font-weight: bold;
+	border: 1px solid #f0f0f0;
+	transition: all 0.5s ease;
+}
+#tm{
+	background: rgba(240,240,240,0) url(../img/medicinef0.png) no-repeat center;
+	background-size: auto 100%;
+}
+#tm2{
+	background: rgba(240,240,240,0) url(../img/arfaf0.png) no-repeat center;
+	background-size: auto 100%;
+}
 
+/*==================================*/
+.btn-m{
+	margin-top: 5%;
+}
+/****************************************Social Btns************************************/
 .social{
 	float: left;
 	margin: 5px auto;
