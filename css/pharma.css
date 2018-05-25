@@ -49,10 +49,9 @@ a:hover {
 	background-position: 0 100%;
 	background-repeat: no-repeat;
 	color: #fff;
-	font-family: "Istok Web", sans-serif;
 	font-size: 2em;
 	position: relative;
-	margin-top: -5%;
+	margin-top: -5% !important;
 	min-height: 720px; 
 }
 .parallax-bg{
@@ -106,14 +105,13 @@ a:hover {
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
-div.pCards:hover{
+.pCards:hover{
 	background-size: 120% auto;
 }
 
 .pCards:hover .pCardT{
 	background: rgba(9,86,155,0.85);
 	height: 100%;
-	padding-top: 10%;
 	border-radius: 5px;
 }
 
@@ -121,19 +119,31 @@ div.pCards:hover{
 	background: rgba(9,86,155,0.8);
 	border-radius: 0 0 5px 5px;
 	position: absolute;
+	text-indent: 20px;
 	font-weight: 10px;
+	overflow-x: auto;
 	color: white;
-	width: 100%;
-	height:40%;
-	bottom:0;
+	height: 40%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 10%;
+	margin: 0;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
 
-	-webkit-transition: background 0.5s ease, top 0.5s ease, padding-top 0.5s ease, height 0.5s ease;
-	-o-transition: background 0.5s ease, top 0.5s ease, padding-top 0.5s ease, height 0.5s ease;
-	transition: background 0.5s ease, top 0.5s ease, padding-top 0.5s ease, height 0.5s ease;
+/**********************************Person block************************************/
+.col-md-3>img{
+	margin-bottom: 5%;
 }
-.pCardT>p{
-	margin: 5%;
+.col-md-3>img p{
+	/* padding-left: 10%; */
+	/* padding-right: 10%; */
 }
+
+
 /**********************************Youtube block************************************/
 .youtube-block{
 	background: url(../img/player-bg.png) no-repeat;
@@ -179,11 +189,11 @@ div.pCards:hover{
 .btns:hover,
 #tm:hover,
 #tm2:hover{
-	box-shadow: 0 0 5px #01EDC9, inset 0 0 5px #01EDC9;
+	box-shadow: 0 0 5px #01EDf9, inset 0 0 5px #01EDf9; /* #01EDC9 */
 	border: 1px solid #00B2F4;
-	border-color: #01EDC9;
+	border-color: #01EDf9;
 	background: none;
-	color: #fff;
+	color: #01EDf9;
 }
 
 button.btns{
@@ -202,10 +212,44 @@ button.btns{
 	background: rgba(240,240,240,0) url(../img/arfaf0.png) no-repeat center;
 	background-size: auto 100%;
 }
-
 /*==================================*/
 .btn-m{
 	margin-top: 5%;
+}
+
+/*************************************************ScrollToTop********************************/
+#toTopBtn{
+	background: #2e2e2e url(../img/arrow-up.png) repeat-y; /* #01edc9 */;
+	background-position: center;
+	background-size: auto 100%;
+	box-shadow: 0 0 20px -10px #01edc9;
+	transition: all 0.5s ease;
+	border: 3px dashed #01edc9;
+	border-radius: 50%;
+	position: fixed;
+	cursor: pointer;
+	display: none;
+	outline: none;
+	z-index: 99;
+	right: 3%;
+	bottom: 10%;
+	width: 50px;
+	height: 50px;
+	opacity:0.5;
+	/* box-shadow: 2px 2px 0 rgba(0,0,0, 0.7); */
+	line-height: 0;
+	color: transparent;
+	text-align: center;
+	font: 26px/54px 'FontAwesome';
+	transform: rotate(180deg);
+}
+#toTopBtn:hover{
+	background-color: #01edc9;
+	background-position: center;
+	opacity:0.9;
+	font-size: 2.5em;
+	border-style: solid;
+	transform: rotate(0deg);
 }
 /****************************************Social Btns************************************/
 .social{
@@ -251,4 +295,6 @@ button.btns{
 .social-g:hover {
 	cursor: pointer;
 	background-position-y: -35px;
+}
+.scrolltoTop>span{
 }
