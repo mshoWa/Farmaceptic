@@ -1,3 +1,4 @@
+
         //  ScrollToTop
 jQuery(document).ready(function() {  
     var offset = 1000;
@@ -5,7 +6,7 @@ jQuery(document).ready(function() {
  
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > offset) {
-            jQuery('#toTopBtn').fadeIn(duration);    
+            jQuery('#toTopBtn').fadeIn(duration);
         } else {
             jQuery('#toTopBtn').fadeOut(duration);
         }

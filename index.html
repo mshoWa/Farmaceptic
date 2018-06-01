@@ -7,6 +7,9 @@
     
     <title>Pharmaceptic - landing page</title>
 
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -17,105 +20,228 @@
     <![endif]-->
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    
     <link rel="stylesheet" href="css/pharma.css">
     <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
 	
 </head>
 <body>
 	
-	<!-- <div class="container"></div> -->
-
-	<div class="mainJ" data-aos="zoom-out-down" data-aos-anchor-placement="top-top" data-aos-duration="1000" data-aos-delay="500" data-aos-once=true>
-	
-			<div class="col-md-7" style="padding-top: 13% !important; padding: 0; margin: 0;" data-aos="fade-right" data-aos-anchor-placement="top-top" data-aos-delay="1500" data-aos-once=true>
-				<blockquote class="blockquote" style="background: rgba(0,0,0,0.4);">
-					<h1 style="font-size: 3em">Добро пожаловать!</h1>
-					<p class="lead">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового</p>		
-				</blockquote>
-			</div>
-
-			<!-- <div class="col-md-8 col-md-offset-2 bBlock">
-				<button class="btns btn-tm" onclick="location.href='#products'" id="tm">Продукты <b class="glyphicon glyphicon-qrcode"></b></button>
-				<button class="btns btn-tm" onclick="location.href='#about'" id="tm1">О нас <b class="glyphicon glyphicon-fire"></b></button>
-				<button class="btns btn-tm" onclick="location.href='#personal'" id="tm2">Коллектив <b class="glyphicon glyphicon-user"></b></button>
-			</div> -->
-		
-	</div>
-
 	<a href="#" id="toTopBtn" title="Наверх" class="text-center">
 		<i class="fas fa-angle-up"></i>
 	</a>
 
+	<!-- <div class="container"></div> -->
+
+	<div class="mainJ" data-aos="zoom-out-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500" data-aos-once=true>
+		
+		<div class="top-nav" id="top-nav">
+			<a href="#pills">| Препараты</a>
+			<a href="#info">| Информация</a>
+			<a href="#partners">| Партнеры</a>
+			<a href="#media">| Медиа</a>
+			<a href="#about">| О нас</a>
+
+			<button type="button" class="nav-toggle" onclick="navFunc()">
+				<!-- <span class="sr-only">Кнопка навигации</span> -->
+				&#9776; Меню
+			</button>
+		</div>
+		<div class="wraper">
+			<a href="index.html" class="logo">
+				<img src="Logotype.png" class="img-responsive" alt="VelPharm.uz">
+			</a>
+		</div>
+		
+		<div class="col-md-7 wellC" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="1500" data-aos-once=true>
+			<blockquote class="blockquote">
+				<h1 style="font-size: 3em">Добро пожаловать!</h1>
+				<p class="lead">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового</p>		
+			</blockquote>
+		</div>
+		<!-- <div class="col-md-8 col-md-offset-2 bBlock">
+			<button class="btns btn-tm" onclick="location.href='#products'" id="tm">Продукты <b class="glyphicon glyphicon-qrcode"></b></button>
+			<button class="btns btn-tm" onclick="location.href='#about'" id="tm1">О нас <b class="glyphicon glyphicon-fire"></b></button>
+			<button class="btns btn-tm" onclick="location.href='#personal'" id="tm2">Коллектив <b class="glyphicon glyphicon-user"></b></button>
+		</div> -->
+		
+	</div>
+
+
 	<section class="container-fluid">
-		<div class="container">
-			<h1 class="text-center" data-aos="slide-up" data-aos-anchor-placement="botttom-bottom" data-aos-once=true>Наши достижения!!!</h1>
-			<div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100" data-aos-once=true>
-				<div class="text-center">
-					<img src="img/atom.png" class="icon-b">
-					<h4>Атомы</h4>
+		<div class="container text-center">
+			<h2 data-aos="slide-up" data-aos-anchor-placement="botttom-bottom" data-aos-once=true>Наши достижения!!!</h2>
+			<div class="row" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100" data-aos-once=true>
+				<div class="col-md-4">
+					<img src="img/atom.png" width="30%" class="icon-b">
+				</div>
+				<div class="col-md-8 text-left">
+					<h3>Атомы</h3>
 					<p >Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
 				</div>
 			</div>
-			<div class="col-md-4" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-delay="200" data-aos-once=true>
-				<div class="text-center">
-					<img src="img/dnk.png" class="icon-b">
-					<h4>ДНК</h4>
-					<p >Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они языкового океана может и быть такое разве это не прелесть, зыкового океана.</p>
+			
+			<div class="row" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100" data-aos-once=true>
+				<div class="col-md-8 text-right">
+					<h3>ДНК</h3>
+					<p >Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/dnk.png" width="35%" class="icon-b">
 				</div>
 			</div>
-			<div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="300" data-aos-once=true>
-				<div class="text-center">
-					<img src="img/colba.png" class="icon-b">
-					<h4>Аль-химия</h4>
-					<p >Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Семантика большого языкового океана.</p>
+
+			<div class="row" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100" data-aos-once=true>
+				<div class="col-md-4">
+					<img src="img/pills.png" width="35%" class="icon-b">
+				</div>
+				<div class="col-md-8 text-left">
+					<h3>Аль-химия</h3>
+					<p >Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
 				</div>
 			</div>
+			
 		</div>
 	</section>
-	<section class="container-fluid parallax-bg text-center">
-		<div class="container">
-			<h1 data-aos="slide-up" data-aos-anchor-placement="botttom-bottom" data-aos-once=true>Наши лучшие подукты</h1>
-			<div class="col-md-12">
-				<div class="col-md-4" data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="100" data-aos-once=true>
-					<div class="pCards pBg-1">
-						<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut praesentium iusto, ipsum tenetur inventore labore nihil quos explicabo possimus harum nulla sed repellendus rem voluptate officiis recusandae! At, vero, animi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reiciendis minus, et quidem quia cum odio vel facilis debitis eius. Dolore provident nam incidunt doloremque quia, delectus, harum ratione ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
+	<section class="container-fluid parallax-bg text-center" style="padding: 0" id="pills">
+		<h1 data-aos="slide-up" data-aos-anchor-placement="botttom-bottom" data-aos-once=true>Наши препараты</h1>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			    <!-- Indicators -->
+			    <!-- <ol class="carousel-indicators">
+			    					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    					<li data-target="#myCarousel" data-slide-to="1"></li>
+			    					<li data-target="#myCarousel" data-slide-to="2"></li>
+			    </ol> -->
+
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner">
+					<div class="item active">
+						<div class="pCards pBg-1">
+							<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut praesentium iusto, ipsum tenetur inventore labore nihil quos explicabo possimus harum nulla sed repellendus rem voluptate officiis recusandae! At, vero, animi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reiciendis minus, et quidem quia cum odio vel facilis debitis eius. Dolore provident nam incidunt doloremque quia, delectus, harum ratione ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
+						</div>
+						<div class="pCards pBg-2">
+							<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
+						</div>
+						<div class="pCards pBg-3">
+							<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4" data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="200" data-aos-once=true>
-					<div class="pCards pBg-2">
-						<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
+
+					<div class="item">
+						<div class="pCards pBg-4">
+							<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias esse sunt vitae quod modi assumenda repellendus vero blanditiis similique ex! Doloribus quis pariatur at nobis cupiditate officia distinctio, nihil. Harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dignissimos eveniet reprehenderit tempora, facere voluptas fugiat! Culpa voluptas accusamus quisquam, animi consequuntur quas, eveniet distinctio, laborum libero pariatur aspernatur saepe!</p>
+						</div>
+						<div class="pCards pBg-5">
+							<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
+						</div>
+						<div class="pCards pBg-6">
+							<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4" data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="300" data-aos-once=true>
-					<div class="pCards pBg-3">
-						<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
-					</div>
-				</div>
-				<div class="col-md-4" data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="100" data-aos-once=true>
-					<div class="pCards pBg-4">
-						<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias esse sunt vitae quod modi assumenda repellendus vero blanditiis similique ex! Doloribus quis pariatur at nobis cupiditate officia distinctio, nihil. Harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dignissimos eveniet reprehenderit tempora, facere voluptas fugiat! Culpa voluptas accusamus quisquam, animi consequuntur quas, eveniet distinctio, laborum libero pariatur aspernatur saepe!</p>
-					</div>
-				</div>
-				<div class="col-md-4" data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="200" data-aos-once=true>
-					<div class="pCards pBg-5">
-						<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
-					</div>
-				</div>
-				<div class="col-md-4" data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="300" data-aos-once=true>
-					<div class="pCards pBg-6">
-						<p class="text-justify pCardT"><!-- &emsp;&emsp; -->Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate deleniti ea.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+			    </div>
+
+		    	<!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+			    </a>
+		  	</div>
 	</section>
 
-	<section class="container-fluid text-center" id="personal" style="margin: 32px auto">	
-			<h1 data-aos="slide-up" data-aos-anchor-placement="botttom-bottom" data-aos-once=true>Наш коллектив</h1>
-			<div class="col-md-3" data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-delay="100" data-aos-once=true>
+	<section class="container-fluid text-center" style="margin: 32px auto" id="partners">
+			<h1 data-aos="slide-up" data-aos-anchor-placement="botttom-bottom" data-aos-once=true>Наши Партнеры</h1>
+			<div class="container table-responsive">
+				<table class="table table-hover table-striped">
+					<thead>
+						<tr class="active">
+							<th>grid-#1</th>
+							<th>grid-#2</th>
+							<th>grid-#3</th>
+							<th>grid-#4</th>
+							<th>grid-#5</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+						<tr>
+							<td>grid-#1</td>
+							<td>grid-#2</td>
+							<td>grid-#3</td>
+							<td>grid-#4</td>
+							<td>grid-#5</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- <div class="col-md-3" data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-delay="100" data-aos-once=true>
 				<img src="img/woman-11.png">
 				<p style="font-size: 1.6em;">Д-р.Сара Розарио</p>
 				<code>Кардиолог</code>
@@ -138,10 +264,10 @@
 				<p style="font-size: 1.6em;">Д-р.Мошонидзе Каваяки</p>
 				<code>Угадайте</code>
 				<p>Дайте краткое описание ваших основателей, чтобы стать ближе к вашим клиентам.</p>
-			</div>
+			</div> -->
 	</section>
 
-	<section class="container-fluid parallax-bg">
+	<section class="container-fluid parallax-bg" id="media">
 		<div class="container" style="padding: 2% 1%">
 			<div class="col-md-8 text-center"  data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-once=true>
 				<iframe class="youtube-block spec" width="100%" height="430" src="https://www.youtube.com/embed/RRvbx_MjNdI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -173,7 +299,7 @@
 		</div>
 	</section>
 <!-- ===================================FOOTER============================================== -->
-	<section class="col-md-12" style="background: #333; color: #fff;" id="about"  data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-once=true>
+	<section class="col-md-12" style="background: #333; color: #fff;" id="about"  data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-once=true id="about">
 		<div class="container" style="margin-top: 0;">
 
 			<div class="col-md-6">
@@ -235,6 +361,23 @@
     <script src="js/jquery.min.js"></script>
     <script src="bower_components/aos/dist/aos.js"></script>
 	<script src="js/pharma.js"></script> <!-- Own jScript - MainJ FullScreen display -->
+    <script>
+    	function navFunc() {
+		    var x = document.getElementById("top-nav");
+		    var w = document.getElementsByClassName("wellC")[0];
+		    if (x.className === "top-nav") {
+		        x.className += " responsive";
+		        w.className += " pad";
+		        $('.nav-toggle').html('&#9747;');
+		        $('blockquote').style.backgroundColor = "rgba(0,0,0, .8)";
+		    } else {
+		        x.className = "top-nav";
+		        w.className = "col-md-7 wellC";
+		        $('.nav-toggle').html('&#9776; Меню');
+		        $('blockquote').style.backgroundColor = "rgba(0,0,0, .4)";
+		    }
+		};
+    </script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
